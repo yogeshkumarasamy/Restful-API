@@ -1,0 +1,10 @@
+Node Js Server Setup:
+https://nodejs.org/en/docs/guides/getting-started-guide/
+
+
+
+
+Promises:
+https://www.youtube.com/watch?v=PoRJizFvM7s
+
+http:

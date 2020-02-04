@@ -1,0 +1,50 @@
+1. created server
+2. passed express to the server to handle everything
+3. Tested express for incoming requests through its middleware
+4. created routes using express.Router for get,post,patch and delete method
+5. Imported those route configurations in app.js to supply routes and its listener
+6. Installed nodemon for watching the changes
+7. Morgan - Logging package installation
+8. Handling Errors for the unexpected routes and unexpected errors like db operations
+9. Parsing the body using body-parser and handling the cors using writing special headers
+10. Installing cors package to eliminate writing the special headers code
+11. Adding DB to the application { Mongodb and Mongoose package }
+12. Creating Mongodb atlas credentials and cluster to work with cloud based Database to accomodate scalabality
+13. Created DB user to make a connection between api and cloud db
+14. Imported mongoose package into the api(app.js) to connect db and do operations in the db
+15. kept the password of db in the seperate file(nodemon.json) to isolate it
+16. Created and exported schema and model to save the data in db(mongoose works with model and schema only)
+17. imported the model created in product file to post the data
+18. Instantiated the model with new keyword and posted the necessary fields inside that. Instantiated mongoose 
+    with new keyword to generate the unique _id inside model.
+19. saved and sent the data to mongoose using save()method and handled promise use send the response
+20. {/:productId} Retrieved the created productId from the url param and got the single entry through
+    findById() method of mongoose.
+21. {/:productId} remove() method does the delete trick in db
+22. get all product list was done by .find() method of mongoose
+23. update method does the update trick in http patch. $set is used to update the particular field of form data in update method    
+24. Mongoose validation on product schema
+25. Remove unnecessary properties in response in all endpoints using select method and custom rewrite
+26. Made all the product endpoints self descriptive by giving url in the response to reduce user assumptions to navigate to other routes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Packages used:
+express
+nodemon
+morgan
+body-parser
+cors
+mongoose
+multer

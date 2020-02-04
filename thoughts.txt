@@ -1,0 +1,10 @@
+DB SCHEMA for createuser:
+name: string,
+email: string,
+mobile: number,
+password: string,
+picture: binary
+
+
+FORGOT EMAIL:
+
