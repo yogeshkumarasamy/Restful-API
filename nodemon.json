@@ -1,5 +1,6 @@
 {
     "env": {
-        "mongo_pw": "rest-api"
+        "mongo_pw": "rest-api",
+        "jwt_key": "password"
     }
 }

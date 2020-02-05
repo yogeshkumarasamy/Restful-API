@@ -37,6 +37,50 @@
 
 
 
+Steps for Creating Login/Signup Module:
+
+Signup Route:
+1. Create User schema/Model for signup the user
+2. Create POST Route for signing up
+3. Hash the password to protect privacy
+4. Save the valid details to db
+5. Avoid Duplicate Entries while saving in order to prevent the same user save
+6. Validate the email address before save
+
+Delete Route:
+1. Create a Get delete route for deleting user using id
+
+Get Route to get all users:
+1. Create a Get route to see all the users signed up
+
+
+Signin:
+1. Create POST route for signin
+2. Validate the payload with signedup user for genuinity
+3. Generate a token if he is authenticated user
+4. Throw error if the user is not authenticated/Exist
+
+
+Route Protection using jwt:
+1. Create a middleware which should be pluggable in the routes config to authenticate the user before he expects
+    response
+2. Verify the genuinity of the user by jwt token validation
+3. if the user token is not valid throw the right message for him
+4. Protect the protectable routes
+
+Add controller to clean up the route files:
+1. Create a controller directory and respective file to reside all the controllable executions
+2. Import then in the route files and eliminate the old chunk of code
+3. Remove the unncessary imports and clean up the old files 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -48,3 +92,5 @@ body-parser
 cors
 mongoose
 multer
+bcryptjs
+jsonwebtoken

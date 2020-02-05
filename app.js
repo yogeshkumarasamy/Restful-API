@@ -12,6 +12,7 @@ app.use( '/products', express.static('products') ); //To make the products folde
 
 const productRoutes = require( './api/routes/products' );
 const orderRoutes = require( './api/routes/orders' );
+const userRoutes = require( './api/routes/users');
 
 app.use( morgan( 'dev' ) ); // To logging Method of the request, resource path, http code, time took to deliver
 app.use( bodyParser.urlencoded({ extended: false }) );
@@ -37,6 +38,7 @@ app.use( cors() );
 // }) //Logging the incoming request time BTW
 app.use( '/products', productRoutes );
 app.use( '/orders', orderRoutes );
+app.use( '/users', userRoutes );
 
 app.use( (req, res, next) => {
     const error = new Error( 'Not Found' );       
